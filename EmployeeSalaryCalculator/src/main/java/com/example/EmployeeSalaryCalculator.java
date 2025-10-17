@@ -66,7 +66,10 @@ public class EmployeeSalaryCalculator
 				else
 				{
 					//YOUR CODE STARTS HERE
-                    grossSalary = (HR * standardWorkingHours) + (overTimePay * overTimeRate);
+                    int standardPay = (HR * standardWorkingHours);
+                    int overtimeRate = HR * 2;
+                    int overtimePay = (overtimeRate) * (HW - standardWorkingHours);
+                    grossSalary = standardPay + overtimePay;
 
 					//YOUR CODE ENDS HERE
 				}
